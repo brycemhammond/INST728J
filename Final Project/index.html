@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" >
+   <head>
+      <meta charset="UTF-8">
+      <title>Bryce Hammond - INST728J Final Project</title>
+   </head>
+   <body>
+      <div>
+         <div>
+            <div>
+               <div>
+                  <h3>SmartList</h3>
+               </div>
+            </div>
+            <div class="labels">
+               <table class="table">
+                  <tr>
+                     <th>Category</th>
+                     <th>Task Name</th>
+                     <th>Date</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <select name="" id="select_task_category">
+                           <option value="School">School</option>
+                           <option value="Work">Work</option>
+                           <option value="Leisure">Leisure</option>
+                           <option value="Household">Household</option>
+                           <option value="Random">Random</option>
+                        </select>
+                     </td>
+                     <td>
+                        <input type="text" class="Description" />
+                     </td>
+                     <td>
+                        <select name="" class="task_description_title"  id="date_select">
+                           <option value="Today">Today</option>
+                           <option value="Tomorrow">Tomorrow</option>
+                        </select>
+                     </td>
+                  </tr>
+                  <tr>
+                     <th class="task_description" >Description</th>
+                  </tr>
+                  <tr>
+                     <td colspan="4">
+                        <input type="text" class="input_description" required />
+                     </td>
+                  </tr>
+                  <tr>
+                     <td colspan="4">
+                        <button class="btn_add_fin"  onclick="add_to_list()">ADD TO LIST</button>
+                     </td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
