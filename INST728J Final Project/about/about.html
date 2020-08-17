@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>SmartList - About</title>
+        <link rel="stylesheet" href="./about.css" />
+        <script type = "text/javascript">
+            function validate() {
+               if( document.form.email.value == "" || document.form.subject.value == "" || document.form.message.value == "") {
+                  alert( "Please make sure all required fields are entered." );
+                  document.form.subject.focus() ;
+                  return false;
+               }
+               return( true );
+            }
+        </script>
+    </head>
+    <body>
+        <div class="btn-group">
+            <a href="../index.html"><button>Home</button></a>
+            <a href="../tasks/task-list.html"><button>Start Listing</button></a>
+        </div>
+        <div class="info">
+            <header class='about-page'>
+                <p class='about-page-intro'>All About</p>
+                <h1 class='about-page-heading'>SmartList!</h1>
+            </header>
+            <section class="introduction-section">
+                <h1 style="text-align: center;">What is SmartList?</h1>
+                <p>SmartList is a quick and easy to-do list maker that allows a user to organize their tasks based on the category it's in and when it's due!</p>
+            </section>
+            <section class="about-me">
+                <h1 style="text-align: center;">Meet The Developer</h1>
+                <img class="center" src="headshot.JPG"/>
+                <p>Hey! My name is Bryce Hammond. I am a graduate student at The University of Maryland, College Park studying Human-Computer Interaction. </p>
+            </section>
+            <section class="more-info">
+                <h1 style="text-align: center;">More About Me</h1>
+                <h2>What motivated this project?</h2>
+                <p>I was trying to think of problems and pain points I had during my first year of graduate school. I decided the biggest pain point was remembering everything
+                    I needed to do. Between my responsibilities as a Graduate Assistant, as a Software Engineer Intern for a defense company, and as a full time student who was 
+                    pursuing internship opportunities, I always found myself struggling to remember what I had to do and when things were due...which led to quite a few
+                    close calls with deadlines. I thought it would be cool to create a to-do list that breaks down tasks into categories. I have experience with front end 
+                    development, but I wanted to practice my JS skills a bit more, especially with content routing and JS animation. 
+                </p>
+                <h2>Why'd you choose to pursue a M.S. in Human-Computer Interaction?</h2>
+                <p>I graduated in May 2019 with my B.S. Information Science. I have always loved tech, specifically software development, and growing up,
+                I was always drawing and painting. When I took INST362 in undergrad, I fell in love with the idea of Human-Computer Interaction. I did some AdobeXD
+                tutorials and decided to apply to the HCI program to strengthen my design skills. It's a good way for me to mesh my passions for tech and art without 
+                compromising one or the other.
+                </p>
+                <h2>What technologies are used for this web application?</h2>
+                <p>HTML, CSS, and JavaScript.</p>
+                <h2>What do you want to do after you graduate?</h2>
+                <p>Honestly, the answer to this question changes almost weekly. From a career standpoint, I can see myself starting out as a Software Engineer 
+                on a product team for a small to midsize company. From a personal standpoint, I would love to travel if it is safe to do so. I love travelling and it's been
+                hard not being able to travel because of the pandemic.
+                </p>
+                <br/> 
+            </section>
+            <br/>
+            <div class="break"></div>
+            <div class="contact-section">
+            <br/>
+            <aside id="contact">
+            <h1>Contact Us</h1>
+            <div id="contact_header">
+                <p>Interested in joining the SmartList team or providing us some feedback? If so, please fill out the form below.</p>
+                <p><i>Our team will get back to you within two business days.</i></p>
+            </div>
+            <fieldset style="border: none;">
+                <form name="form" method="post" action="ThankYou.html" onsubmit = "return(validate());">
+                    <table width="100%" align="center" cellpadding="1" cellspacing="0" >
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <td>
+                            <div align="center">
+                                <table width="100%" cellpadding="0" cellspacing="0" >
+                                    <tr>
+                                        <td>
+                                            <table width="100%" align="center" cellpadding="2" cellspacing="0" >
+                                                <tr>
+                                                    <td  valign="top"><strong>Name:</strong></td>
+                                                    <td ><input name="name" type="text" placeholder="Enter First and Last Name"  size="47"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td valign="top"><strong>Email:<font color="#FF0000">*</font></strong></td>
+                                                    <td><input name="email" type="text" placeholder="Enter valid email address" size="47" maxlength="45"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td valign="top"><strong>Subject:<font color="#FF0000">*</font></strong></td>
+                                                    <td><input name="subject" type="text"  placeholder="Message Subject" size="47" maxlength="40"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td valign="top" ><strong>Message:<font color="#FF0000">*</font></strong></td>
+                                                    <td><textarea name="message" cols="41" rows="10"  placeholder="Message" id="comment" ></textarea></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                    <td>
+                                                        <div class="btn-group">
+                                                            <button value="Submit">Submit</button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                        </tr>
+                    </table>
+                </form>
+            </fieldset>
+        </div>
+        </div>
+    </div>
+    </body>
+</html>

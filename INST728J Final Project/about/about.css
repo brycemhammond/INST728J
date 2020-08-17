@@ -1,0 +1,169 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222222;
+  font-size: 1em;
+  background-image: linear-gradient(315deg, #bbf0f3 0%, #f6d285 74%);
+  overflow-x: hidden;
+  text-align: center;
+}
+.break {
+  background-color: black;
+  height: 3px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+}
+.contact-section {
+  background-color: #bbf0f3;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: 0px;
+}
+.info {
+  text-align: left;
+}
+#contact {
+  width: 100%;
+  height: auto;
+  margin: 3px;
+  text-align: center;
+}
+h3 {
+  margin-left: 40px;
+}
+h4 {
+  color: gold;
+  padding-left: 10%;
+  text-decoration: underline;
+}
+fieldset {
+  margin: 10px;
+  margin-left: 33%;
+}
+.content-footer, .about-page-heading, .about-page-intro {
+  text-align: center;
+}
+.about-page-intro {
+  margin-bottom: 0.1em;
+  font-size: 4em;
+  color: #54B264;
+  text-shadow: 4px 4px 5px black;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.about-page-heading {
+  color: #54B264;
+  text-shadow: 4px 4px 5px black;
+  margin-top: -0.2em;
+  font-weight: bold;
+  font-size: 6em;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.introduction-section, .about-me, .more-info {
+  max-width: 38em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+}
+.introduction-section > p, .about-me > p, .more-info, .content-footer > p {
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+.more-info > h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 2em 0 1em 0;
+}
+section > h1 {
+  margin-top: 2em;
+}
+.content-footer, .about-page-heading, .about-page-intro {
+  text-align: center;
+}
+.about-page {
+  margin-top:-10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding: 6em 0;
+  background-image: url(FAQ.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.introduction > p, .location > p, .content-footer > p {
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.introduction-section, .about-me, .more-info {
+  max-width: 38em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+}
+.content-footer {
+  margin: 50px 0;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #73A8C2;
+  text-decoration: none;
+}
+.social > li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.content-footer > p {
+  color: #F7EDE1;
+}
+@media only screen and (max-width: 500px) {
+  .about-page {
+      padding: 3em 0;
+ }
+  .about-page-heading {
+      font-size: 3em;
+ }
+  .content-footer {
+      padding: 2em 2.5em;
+ }
+}
+a {
+  color:#54B264;
+  text-decoration: none;
+}
+.btn-group button {
+  background-color: #176123;
+  border: 1px solid #176123;
+  color: white;
+  padding: 12px 36px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  width: 200px;
+  margin-right: 20px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.btn-group button:not(:last-child) {
+  border-right: none;
+}
+.btn-group button:hover {
+  background-color: white;
+  color: #54B264;
+  border: none;
+  box-shadow: 1px 15px 25px -5px rgba(0,0,0,0.3);
+}
+.success {
+  color: green;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>SmartList - Task Editor</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="web_view">
+            <div class="smart_list">
+                <br/>
+                <div class="btn-group">
+                    <a href="../index.html"><button>Home</button></a>
+                    <a href="../about/about.html"><button>About</button></a>
+                </div>
+                <br/>
+                <br/>
+                <div style="background-color: white; width:60%;padding:2em">
+                <h3>How to Use SmartList:</h3>
+                <br/>
+                <p>Click the plus icon on the header to open the SmartList Task Adder. Once you open the task adder, select a 
+                    task category, enter a task name, select a completion target, and add a description of the task. When you click on
+                    the add task button, the task will appear beneath the adder. You can add as many tasks as you'd like. Once you complete 
+                    a task, hover over the completion target and a trash bin icon will appear. Click this icon to remove the completed task 
+                    from the list.
+                </p>
+                </div>
+                <div class="smartlist_header">
+                    <div class="title_left">
+                        <h3>SMARTLIST</h3>
+                    </div>
+                    <div class="menu_button_action">
+                        <a href="#counter" onclick="add_new_task()"><i class="material-icons">&#xE148;</i></a>
+                    </div>
+                </div>
+                <div class="task_adder">
+                    <br/>
+                    <table class="table">
+                        <tr>
+                            <th>Category</th>
+                            <th>Task Name</th>
+                            <th>Completion Target</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="" id="select_category" required>
+                                    <option value="Academic">Academic</option>
+                                    <option value="Professional">Professional Development</option>
+                                    <option value="Work">Work</option>
+                                    <option value="Leisure">Leisure</option>
+                                    <option value="Household">Household</option>
+                                    <option value="Miscellaneous">Miscellaneous</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" class="task_name" required/>
+                            </td>
+                            <td>
+                                <select name="" class="completion_target_date" id="completion_target" required>
+                                    <option value="Today">Today</option>
+                                    <option value="Tomorrow">Tomorrow</option>
+                                    <option value="Next Week">Next Week</option>
+                                    <option value="This Month">This Month</option>
+                                    <option value="Next Month">Next Month</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="task_description_title">Task Description</th>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <input type="text" class="task_description" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <button class="add_task" onclick="add_task()">ADD TASK</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="added_task_items">
+                    <ul>
+                        <div class="item_list_show">
+                            <div class="added_task_items_btn">
+                                <ul>
+                                    <li style="margin-left:121px;">
+                                        <a href="#" onclick="submit_action('0','0_1');"><i class="material-icons">&#xE872;</i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>

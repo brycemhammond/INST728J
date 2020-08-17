@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Bryce Hammond - Week 3</title>
+        <style>
+            body {
+                background-image: url(bg1.gif);
+            }
+            .container {
+                width: 75%;
+                margin: auto;
+                background-color: #9b3333;
+                padding: 10px;
+            }
+            .header-container header {
+                background-color: white;
+                margin-top: -10px;
+            }
+
+            #content {
+                background-color: #9b3333;
+                width: 25%;
+                float: left;
+            }
+            #sidemenu {
+                width: 74%;
+                float: right;
+                background-color: #f0e7e2;
+                height: auto;
+                margin: 3px;
+            }
+            .footer-container {
+                clear: both;
+                background-color: #fbeeee;
+                padding: 10px;
+                padding-left: 0;
+                color: black;
+                text-decoration: none;
+                text-align: center;
+                width: 100%;
+            }
+            h3 {
+                margin-left: 40px;
+            }
+            h4 {
+                color: gold;
+                padding-left: 10%;
+                text-decoration: underline;
+            }
+            fieldset {
+                margin: 10px;
+                margin-left: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header-container">
+                <header>
+                    <img src="umdlogo.gif" />
+                </header>
+            </div>
+            <div class="main-container">
+                <div id="content">
+                    <!-- Content Area-->
+                    <div id="arrow">
+                        <aside><img src="arrow.gif" align="left" /></aside>
+                        <h4 id="feedback">Feedback</h4>
+                    </div>
+                </div>
+                <aside id="sidemenu">
+                    <h3>Please complete the following form</h3>
+                    <fieldset style="background-color: #fbeeee; border: none;">
+                      <form name="form" method="post" action="ThankYou.html" >
+                        <table width="100%" align="center" cellpadding="1" cellspacing="0" >
+                              <tr>
+                                  <td>&nbsp;</td>
+                              </tr>
+                              <tr>
+                                  <td bgcolor="#FBEEEE"> <div align="center">
+                                      <table width="70%" cellpadding="0" cellspacing="0" >
+                                          <tr>
+                                              <td width="498" height="40" ><strong><font color="#9B3333">FEEDBACK</font></strong></td>
+                                          </tr>
+                                          <tr>
+                                              <td>
+                                                  <table width="100%" align="center" cellpadding="2" cellspacing="0" >
+                                                      <tr>
+                                                          <td  valign="top"><strong>CaseID:</strong></td>
+                                                          <td ><input name="case_ID" type="text" value="34564"  size="15" readonly></td>
+                                                      </tr>
+                                                      <tr>
+                                                           <td valign="top"><strong>Subject:<font color="#FF0000">*</font></strong></td>
+                                                            <td><input name="subject" type="text"   size="70" maxlength="40"></td>
+                                                      </tr>
+                                                      <tr>
+                                                          <td valign="top" ><strong>Comment:<font color="#FF0000">*</font></strong></td>
+                                                          <td><textarea name="comment" cols="40" rows="10" id="comment" ></textarea></td>
+                                                      </tr>
+
+                                                      <tr>
+                                                          <td valign="top" >&nbsp;</td>
+                                                          <td>
+                                                              <input type="image" src="btn_submit.gif" value="Submit" />
+                                                          </td>
+                                                      </tr>
+                                                  </table>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>&nbsp;</td>
+                                          </tr>
+                                      </table>
+                                      </div>
+                                  </td>
+                            </tr>
+                        </table>
+                      </form>
+                    </fieldset>
+                </aside>
+            </div>
+            <div class="footer-container">
+                <footer>
+                    <div id="footer-content">Copyright &copy; UMD. All Right Reserved.</div>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
